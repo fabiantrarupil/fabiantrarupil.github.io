@@ -1,5 +1,11 @@
 /* Pantallas pequeñas (móviles) */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
     display: grid;
@@ -9,11 +15,9 @@ body{
     "footer footer";
     grid-template-columns: 20% 1fr;
     grid-template-rows: 20% 1fr 20%;
+    height: 100vh;
 }
 
-.container{
-
-}
 
 header{
     grid-area: header;
@@ -39,6 +43,9 @@ footer{
 @media screen and (max-width: 576px) {
     body {
         background-color: aqua;
+        grid-template-areas: "header" "nav" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 15% auto 10%;
     }
 }
 
