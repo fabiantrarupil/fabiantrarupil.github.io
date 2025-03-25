@@ -7,7 +7,6 @@
 }
 
 body{
-    background-color: black;
     display: grid;
     grid-template-areas: 
     "header header"
@@ -40,10 +39,13 @@ footer{
 }
 
 /* Pantallas Pequeñas (Móviles) */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 310px) and (max-width: 576px) {
     body {
-        background-color: aqua;
-        grid-template-areas: "header" "nav" "main" "footer";
+        grid-template-areas: 
+        "header" 
+        "nav" 
+        "main" 
+        "footer";
         grid-template-columns: 1fr;
         grid-template-rows: 10% 15% auto 10%;
     }
@@ -51,18 +53,54 @@ footer{
 
 /* Pantallas Medianas (Tabletas) */
 
-@media screen and (min-width: 577px) and (max-width: 1023px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     /* Estilos para pantallas medianas */
     body {
-        background-color: blueviolet;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "nav main"
+        "footer main";
+        grid-template-columns: 1fr 80%;
+        grid-template-rows: 10% 20% auto 10%0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Estilos para pantallas medianas */
+    body {
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "nav main"
+        "footer main";
+        grid-template-columns: 1fr 80%;
+        grid-template-rows: 10% 20% auto 10%0;
     }
 }
 
 /* Pantallas Grandes (Escritorio) */ 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 993px) and (max-width: 1199px){
     /* Estilos para pantallas grandes */
     body{
-        background-color: blue;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer main";
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 10% auto 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    /* Estilos para pantallas grandes */
+    body{
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer main";
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 10% auto 10%;
     }
 }
 
