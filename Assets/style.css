@@ -102,7 +102,7 @@ footer {
             "main"
             "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 10% auto auto 10%;
+        grid-template-rows: 10% 18% auto 10%;
     }
 }
 
@@ -117,7 +117,7 @@ footer {
             "nav main"
             "footer main";
         grid-template-columns: 30% 1fr;
-        grid-template-rows: 15% 1fr 15%;
+        grid-template-rows: 15% auto auto 15%;
     }
 }
 
@@ -130,7 +130,7 @@ footer {
             "nav main"
             "footer main";
         grid-template-columns: 25% 1fr;
-        grid-template-rows: 15% 1fr 15%;
+        grid-template-rows: 15% auto auto 15%;
     }
 }
 
@@ -144,6 +144,6 @@ footer {
             "nav main main"
             "footer main main";
         grid-template-columns: 20% 1fr;
-        grid-template-rows: 15% 1fr 15%;
+        grid-template-rows: 15% auto auto 15%;
     }
 }
