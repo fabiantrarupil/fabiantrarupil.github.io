@@ -39,7 +39,7 @@ footer{
 }
 
 /* Pantallas Pequeñas (Móviles) */
-@media screen and (min-width: 310px) and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     body {
         grid-template-areas: 
         "header" 
@@ -59,10 +59,9 @@ footer{
         grid-template-areas: 
         "header header"
         "nav main"
-        "nav main"
         "footer main";
-        grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%;
+        grid-template-columns: 30% 1fr ;
+        grid-template-rows: 15% 1fr 15%;
     }
 }
 
@@ -70,53 +69,25 @@ footer{
     /* Estilos para pantallas medianas */
     body {
         grid-template-areas: 
-        "header header header"
-        "nav main main"
-        "nav main main"
-        "footer main main";
-        grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%;
+        "header header"
+        "nav main"
+        "footer main";
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: 15% 1fr 15%; 
     }
 }
 
 /* Pantallas Grandes (Escritorio) */ 
-@media screen and (min-width: 993px) and (max-width: 1199px){
+@media screen and (min-width: 993px) {
     /* Estilos para pantallas grandes */
     body{
         grid-template-areas: 
         "header header header"
         "nav main main"
-        "nav main main"
         "footer main main";
-        grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 15% 1fr 15%;
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px){
-    /* Estilos para pantallas grandes */
-    body{
-        grid-template-areas: 
-        "header header header"
-        "nav main main"
-        "nav main main"
-        "footer main main";
-        grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%;
-    }
-}
 
-@media screen and (min-width: 1401px) and (max-width: 1600px){
-    /* Estilos para pantallas grandes */
-    body{
-        grid-template-areas: 
-        "header header header header"
-        "nav main main main"
-        "nav main main main"
-        "footer main main main";
-        grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%;
-    }
-}
-
-/*grid-template-rows: calc(100% - 80px) 80px*/
