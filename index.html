@@ -17,6 +17,17 @@
         <nav aria-label="Filtrar por categoría"> <!--Navegador o barra lateral Layout-->
             <h3>Categorías</h3>
             <br>
+            <label for="mi-combobox">Selecciona una opción:</label>
+            <select id="mi-combobox" name="opciones">
+                <option value="" disabled selected>-- Elige tu marca--</option>
+                <option value="opcion1">Harley Davidson</option>
+                <option value="opcion2">Honda</option>
+                <option value="opcion3">Yamaha</option>
+                <option value="opcion3">Ducati</option>
+                <option value="opcion3">KTM</option>
+            </select>
+
+            <br><br>
             <ul class="sin-viñetas">
                 <li>Motocicletas Deportivas</li>
                 <li>Custom</li>
@@ -130,11 +141,26 @@
                         <button></button>
                     </div>
                 </article>
+                <!-- Contenido de ejemplo -->
+                <p class="info-paginacion">Mostrando productos 1-10 de 50</p>
+
+                <!-- Paginación -->
+                <div class="contenedor-paginacion">
+                    <a href="#" class="flecha-paginacion disabled">&laquo;</a>
+                    <a href="#" class="numero-pagina activa">1</a>
+                    <a href="#" class="numero-pagina">2</a>
+                    <a href="#" class="numero-pagina">3</a>
+                    <a href="#" class="numero-pagina">4</a>
+                    <a href="#" class="numero-pagina">5</a>
+                    <a href="#" class="flecha-paginacion">&raquo;</a>
+                </div>
             </section>
 
         </main>
         <footer>
-            <span class="mdi mdi-facebook"></span> <span class="mdi mdi-instagram"></span>
+            <div>
+                <span class="mdi mdi-facebook mdi-grande"></span> <span class="mdi mdi-instagram mdi-grande"></span>
+            </div>
             <br>
             <div class="footer"><strong>Todos los Derechos Reservados © DevNexusCode - F6M7</strong></div>
         </footer>
