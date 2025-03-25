@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
     grid-template-areas:
@@ -14,7 +20,8 @@
         "footer footer";
     grid-template-columns: 20% 1fr;
     grid-template-rows: 20% 1fr 20%;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 
@@ -42,6 +49,7 @@ ul.sin-viñetas{
 main {
     grid-area: main;
     background-color: peru;
+    overflow-y: auto;
 }
 
 .grillaMotocicletas{
@@ -106,7 +114,7 @@ footer {
     }
 }
 
-/* Pantallas Medianas (Tabletas) */
+/* Pantallas Medianas (Tablet) */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
 
@@ -117,7 +125,8 @@ footer {
             "nav main"
             "footer main";
         grid-template-columns: 30% 1fr;
-        grid-template-rows: 15% auto auto 15%;
+        grid-template-rows: 15% 70% 15%;
+        height: 100vh;
     }
 }
 
@@ -130,7 +139,8 @@ footer {
             "nav main"
             "footer main";
         grid-template-columns: 25% 1fr;
-        grid-template-rows: 15% auto auto 15%;
+        grid-template-rows: 15% auto auto auto;
+        height: 100vh;
     }
 }
 
@@ -144,6 +154,7 @@ footer {
             "nav main main"
             "footer main main";
         grid-template-columns: 20% 1fr;
-        grid-template-rows: 15% auto auto 15%;
+        grid-template-rows: 15% auto auto auto;
+        height: 100vh;
     }
 }
