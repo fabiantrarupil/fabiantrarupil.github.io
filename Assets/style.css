@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+.container{
     display: grid;
     grid-template-areas: 
     "header header"
@@ -40,7 +40,7 @@ footer{
 
 /* Pantallas Pequeñas (Móviles) */
 @media screen and (max-width: 576px) {
-    body {
+    .container {
         grid-template-areas: 
         "header" 
         "nav" 
@@ -55,7 +55,7 @@ footer{
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
     /* Estilos para pantallas medianas */
-    body {
+    .container {
         grid-template-areas: 
         "header header"
         "nav main"
@@ -67,7 +67,7 @@ footer{
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
     /* Estilos para pantallas medianas */
-    body {
+    .container {
         grid-template-areas: 
         "header header"
         "nav main"
@@ -80,7 +80,7 @@ footer{
 /* Pantallas Grandes (Escritorio) */ 
 @media screen and (min-width: 993px) {
     /* Estilos para pantallas grandes */
-    body{
+    .container{
         grid-template-areas: 
         "header header header"
         "nav main main"
