@@ -62,7 +62,7 @@ footer{
         "nav main"
         "footer main";
         grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%0;
+        grid-template-rows: 10% 20% auto 10%;
     }
 }
 
@@ -70,12 +70,12 @@ footer{
     /* Estilos para pantallas medianas */
     body {
         grid-template-areas: 
-        "header header"
-        "nav main"
-        "nav main"
-        "footer main";
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer main main";
         grid-template-columns: 1fr 80%;
-        grid-template-rows: 10% 20% auto 10%0;
+        grid-template-rows: 10% 20% auto 10%;
     }
 }
 
@@ -84,11 +84,12 @@ footer{
     /* Estilos para pantallas grandes */
     body{
         grid-template-areas: 
-        "header header"
-        "nav main"
-        "footer main";
-        grid-template-columns: 20% 1fr;
-        grid-template-rows: 10% auto 10%;
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer main main";
+        grid-template-columns: 1fr 80%;
+        grid-template-rows: 10% 20% auto 10%;
     }
 }
 
@@ -96,11 +97,25 @@ footer{
     /* Estilos para pantallas grandes */
     body{
         grid-template-areas: 
-        "header header"
-        "nav main"
-        "footer main";
-        grid-template-columns: 20% 1fr;
-        grid-template-rows: 10% auto 10%;
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer main main";
+        grid-template-columns: 1fr 80%;
+        grid-template-rows: 10% 20% auto 10%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px){
+    /* Estilos para pantallas grandes */
+    body{
+        grid-template-areas: 
+        "header header header header"
+        "nav main main main"
+        "nav main main main"
+        "footer main main main";
+        grid-template-columns: 1fr 80%;
+        grid-template-rows: 10% 20% auto 10%;
     }
 }
 
