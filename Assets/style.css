@@ -56,7 +56,7 @@ ul.sin-viñetas {
 
 main {
     grid-area: main;
-    background-color: peru;
+    background-color: white;
     overflow-y: auto;
     padding: 1rem;
     display: flex;
