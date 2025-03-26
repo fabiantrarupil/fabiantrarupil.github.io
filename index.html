@@ -17,13 +17,16 @@
         <nav aria-label="Filtrar por categoría"> <!--Navegador o barra lateral Layout-->
             <h3>Categorías</h3>
             <br>
-            <label for="mi-combobox">Selecciona una opción:</label>
+            <label for="mi-combobox">
+                <h4>Selecciona una opción:</h4>
+            </label>
             <select id="mi-combobox" name="opciones">
                 <option value="" disabled selected>-- Elige tu marca--</option>
-                <option value="opcion1">Harley Davidson</option>
-                <option value="opcion2">Honda</option>
-                <option value="opcion3">Yamaha</option>
-                <option value="opcion3">Ducati</option>
+                <option value="opcion1">Honda</option>
+                <option value="opcion2">Royal Enfield</option>
+                <option value="opcion3">Zongshen</option>
+                <option value="opcion3">Husqvarna</option>
+                <option value="opcion3">Kawasaki</option>
                 <option value="opcion3">KTM</option>
             </select>
 
@@ -41,13 +44,16 @@
                 <article class="cardMotocicleta">
                     <figure class="imagenMotocicleta">
                         <img src="Assets/img/moto1.webp" alt="">
-                        <figcaption>Oferta Limitada</figcaption>
                     </figure>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-                        <button></button>
+                    <br>
+                    <div class="infoMotocicleta">
+                        <h2>Moto KTM 250 Adventure</h2>
+                        <p>La KTM 250 ADVENTURE es la ligera puerta de entrada a la excitante
+                            gama de motos KTM Adventure. Perfecta para los desplazamientos diarios e incluso para
+                            aventurarse un poco más en lo desconocido, esta compacta, potente y ágil moto todoterreno te
+                            permitirá ir mucho más allá una vez que se acaba el asfalto.</p>
+                        <p class="precioMotocicleta">$3.990.000</p>
+                        <button class="botonMotocicleta">Cotizar</button>
                     </div>
                 </article>
                 <!--Card 2-->
@@ -56,12 +62,16 @@
                         <img src="Assets/img/moto2.webp" alt="">
                         <figcaption></figcaption>
                     </figure>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-                        <button></button>
+                    <br>
+                    <div class="infoMotocicleta">
+                        <h2>Moto Triumph Tiger 1200 Rally Pro</h2>
+                        <p>Pura aventura, todo ventajas. La Rally Pro es la maxi-trail
+                            todoterreno más completa que
+                            puedes encontrar. Con ella vivirás aventuras que antes solo podías imaginar.</p>
+                        <p class="precioMotocicleta">$22.590.000</p>
+                        <button class="botonMotocicleta">Cotizar</button>
                     </div>
+
                 </article class="cardMotocicleta">
                 <!--Card 3-->
                 <article class="cardMotocicleta">
@@ -141,11 +151,12 @@
                         <button></button>
                     </div>
                 </article>
-                <!-- Contenido de ejemplo -->
-                <p class="info-paginacion">Mostrando productos 1-10 de 50</p>
 
-                <!-- Paginación -->
-                <div class="contenedor-paginacion">
+            </section>
+            <div class="paginacion-container">
+                <br>
+                <p class="paginacionInfo">Mostrando productos 1-8 de 50</p>
+                <div class="container-paginacion">
                     <a href="#" class="flecha-paginacion disabled">&laquo;</a>
                     <a href="#" class="numero-pagina activa">1</a>
                     <a href="#" class="numero-pagina">2</a>
@@ -154,7 +165,7 @@
                     <a href="#" class="numero-pagina">5</a>
                     <a href="#" class="flecha-paginacion">&raquo;</a>
                 </div>
-            </section>
+            </div>
 
         </main>
         <footer>
