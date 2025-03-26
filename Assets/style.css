@@ -223,8 +223,8 @@ footer {
 @media screen and (max-width: 576px) {
     .container {
         grid-template-areas:
-            "header"
             "nav"
+            "header"
             "main"
             "footer";
         grid-template-columns: 1fr;
